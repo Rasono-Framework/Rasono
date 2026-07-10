@@ -1,0 +1,23 @@
+{
+  "name": "@rasono/swagger",
+  "version": "0.1.0",
+  "type": "module",
+  "sideEffects": false,
+  "dependencies": {
+    "@hono/swagger-ui": "^0.6.1"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  }
+}

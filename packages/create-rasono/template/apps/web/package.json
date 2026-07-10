@@ -1,0 +1,28 @@
+{
+  "name": "@app/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "node ./scripts/link-rasengan.mjs",
+    "gen": "rasono gen",
+    "dev": "rasono dev -- node ../../node_modules/rasengan/lib/esm/server/dev/server.js",
+    "build": "rasono gen && node ../../node_modules/rasengan/lib/esm/scripts/build-command.js",
+    "serve": "rasengan-serve ./dist"
+  },
+  "dependencies": {
+    "@rasono/actions": "0.1.0",
+    "@rasono/web-core": "0.1.0",
+    "rasengan": "latest",
+    "@rasenganjs/serve": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@rasono/cli": "0.1.0",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}

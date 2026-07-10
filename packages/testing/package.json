@@ -1,0 +1,25 @@
+{
+  "name": "@rasono/testing",
+  "version": "0.1.0",
+  "type": "module",
+  "sideEffects": false,
+  "dependencies": {
+    "@rasono/app": "0.1.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "test"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "test": "npm --prefix ../.. --workspace @rasono/core run build && npm --prefix ../.. --workspace @rasono/auth run build && npm --prefix ../.. --workspace @rasono/web-core run build && npm --prefix ../.. --workspace @rasono/web-memory run build && npm --prefix ../.. --workspace @rasono/hono run build && npm --prefix ../.. --workspace @rasono/app run build && npm --prefix ../.. --workspace @rasono/data run build && npm --prefix ../.. --workspace @rasono/data-drizzle run build && npm --prefix ../.. --workspace @rasono/data-engine run build && npm --prefix ../.. --workspace @rasono/data-kysely run build && npm --prefix ../.. --workspace @rasono/cli run build && npm --prefix ../.. --workspace create-rasono run build && npm run build && node --test test/**/*.test.mjs",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  }
+}

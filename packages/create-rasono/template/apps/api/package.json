@@ -1,0 +1,26 @@
+{
+  "name": "@app/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen": "rasono gen",
+    "dev": "rasono dev -- tsx watch src/index.ts",
+    "build": "rasono gen && tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "latest",
+    "@rasono/actions": "0.1.0",
+    "@rasono/auth": "0.1.0",
+    "@rasono/app": "0.1.0",
+    "@rasono/hono": "0.1.0",
+    "@rasono/swagger": "0.1.0",
+    "hono": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@rasono/cli": "0.1.0",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}

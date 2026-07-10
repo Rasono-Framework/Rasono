@@ -1,0 +1,8 @@
+{
+  "name": "__APP_NAME__",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ]
+}

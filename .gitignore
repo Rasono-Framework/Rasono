@@ -1,0 +1,17 @@
+node_modules
+dist
+.DS_Store
+*.tsbuildinfo
+npm-debug.log*
+.env
+.env.*
+!.env.example
+.tmp-*
+.agents/
+agent/
+coverage/
+.nyc_output/
+*.log
+*.local
+tmp/
+temp/

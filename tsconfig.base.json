@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "paths": {
+      "@rasono/actions": ["packages/actions/src/index.ts"],
+      "@rasono/auth": ["packages/auth/src/index.ts"],
+      "@rasono/app": ["packages/app/src/index.ts"],
+      "@rasono/cli": ["packages/cli/src/index.ts"],
+      "@rasono/core": ["packages/core/src/index.ts"],
+      "@rasono/data": ["packages/data/src/index.ts"],
+      "@rasono/data-drizzle": ["packages/data-drizzle/src/index.ts"],
+      "@rasono/data-engine": ["packages/data-engine/src/index.ts"],
+      "@rasono/data-kysely": ["packages/data-kysely/src/index.ts"],
+      "@rasono/hono": ["packages/hono/src/index.ts"],
+      "@rasono/rasengan": ["packages/rasengan/src/index.ts"],
+      "@rasono/swagger": ["packages/swagger/src/index.ts"],
+      "@rasono/testing": ["packages/testing/src/index.ts"],
+      "@rasono/web-core": ["packages/web-core/src/index.ts"],
+      "@rasono/web-memory": ["packages/web-memory/src/index.ts"]
+    },
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true
+  }
+}

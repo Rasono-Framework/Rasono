@@ -1,0 +1,24 @@
+{
+  "name": "rasono",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run --workspaces build",
+    "test": "npm --workspace @rasono/testing run test",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "npm run --workspaces clean"
+  },
+  "devDependencies": {
+    "hono": "^4.6.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.13.0"
+  },
+  "overrides": {
+    "esbuild": "^0.28.1"
+  },
+  "packageManager": "npm@10.9.0"
+}
