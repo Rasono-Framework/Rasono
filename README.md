@@ -296,3 +296,4 @@ The direction is deliberate:
 If that philosophy matches how you build systems, Rasono is the project to watch and contribute to.
 
 For contribution workflow and repository rules, see [CONTRIBUTING.md](./CONTRIBUTING.md).
+For release policy and branch strategy, see [VERSIONING.md](./VERSIONING.md).

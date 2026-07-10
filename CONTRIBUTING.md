@@ -133,6 +133,42 @@ Do not mix:
 - unrelated generated files
 - non-framework assets
 
+## Branch Strategy
+
+Rasono does not use a random branch model.
+
+Permanent branches:
+
+- `main` for validated framework history
+- `develop` for integration of upcoming framework work
+- `release/<major>.<minor>.x` for release-line stabilization and patch maintenance
+
+Short-lived branches should branch from `develop` unless the work is a release hotfix:
+
+- `feat/<topic>`
+- `fix/<topic>`
+- `docs/<topic>`
+- `refactor/<topic>`
+- `chore/<topic>`
+
+Examples:
+
+- `feat/data-prisma`
+- `fix/openapi-metadata`
+- `docs/versioning-policy`
+
+Release tags must be created from `main`.
+
+## Versioning
+
+Rasono uses Semantic Versioning:
+
+- `MAJOR` for breaking framework changes
+- `MINOR` for backward-compatible features
+- `PATCH` for backward-compatible fixes
+
+See [VERSIONING.md](./VERSIONING.md) for the formal repository policy.
+
 ## Documentation Standard
 
 Documentation is part of the framework, not an afterthought.

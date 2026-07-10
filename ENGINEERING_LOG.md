@@ -1,3 +1,14 @@
+### [2026-07-10T18:00:00Z] | Professional repository versioning, branch strategy, and release baseline
+- **Contexte :** Le depot Git existait, mais il ne portait pas encore une vraie strategie de versioning ou de branches digne d'un framework. Il n'y avait qu'une branche `main`, aucun tag, aucune politique de release visible, et les contributeurs n'avaient pas de reference claire pour savoir comment faire evoluer le projet proprement.
+- **Modifications effectuees :**
+    - Ajout d'une version explicite `0.1.0` et des metadonnees de repository dans `package.json`.
+    - Creation de `VERSIONING.md` pour formaliser la politique SemVer, les tags, les branches permanentes et le processus de release.
+    - Mise a jour de `CONTRIBUTING.md` avec une vraie section `Branch Strategy` et une section `Versioning`.
+    - Mise a jour du `README.md` pour pointer vers `VERSIONING.md`.
+- **Decisions Techniques :** Rasono adopte une strategie volontairement simple et professionnelle: `main` pour l'historique valide, `develop` pour l'integration, et `release/<major>.<minor>.x` pour la stabilisation et la maintenance de ligne. La version racine du repository devient explicite pour eviter l'impression d'un depot non versionne, tandis que le tag Git reste la source de verite des releases.
+- **Impacts & Dependances :** Fichiers touches : `package.json`, `README.md`, `CONTRIBUTING.md`, `VERSIONING.md`, `ENGINEERING_LOG.md`. Cette tranche clarifie le workflow Git, ameliore la lisibilite pour les mainteneurs et pose une base plus credible pour les futures releases du framework.
+- **Prochaines etapes :** Creer et pousser `develop`, creer et pousser `release/0.1.x`, creer le tag `v0.1.0`, puis verifier que les branches suivent correctement `origin`.
+
 ### [2026-07-10T17:40:00Z] | Repository hygiene, contributor philosophy, and framework-only Git preparation
 - **Contexte :** Le projet devait etre prepare pour un push propre comme un vrai framework. Le dossier n'etait pas encore un depot Git, des repertoires temporaires de scaffolding trainaient encore a la racine, le `.gitignore` etait trop faible, et la philosophie du framework n'etait pas encore formalisee pour les futurs contributeurs.
 - **Modifications effectuees :**

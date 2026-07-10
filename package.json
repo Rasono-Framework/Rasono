@@ -1,7 +1,16 @@
 {
   "name": "rasono",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rasono-Framework/Rasono.git"
+  },
+  "homepage": "https://github.com/Rasono-Framework/Rasono",
+  "bugs": {
+    "url": "https://github.com/Rasono-Framework/Rasono/issues"
+  },
   "workspaces": [
     "packages/*"
   ],
