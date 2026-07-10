@@ -16,6 +16,22 @@ Before adding code, ask these questions:
 
 If the answer is unclear, the change probably needs to be redesigned before implementation.
 
+## Benchmark Rule
+
+For every structural feature, adapter, provider, CLI capability, or major framework workflow, study at least three strong references before implementation.
+
+That means:
+
+- read three official documentations, specifications, or production-grade references
+- compare the trade-offs instead of copying the first idea that works
+- adapt the best patterns to Rasono instead of cloning another framework blindly
+
+The goal is simple:
+
+- better architecture
+- better defaults
+- better long-term framework quality
+
 ## What Rasono Is
 
 Rasono aims to be:

@@ -1,3 +1,12 @@
+### [2026-07-10T18:08:00Z] | Contribution rule formalized: benchmark three strong references before structural changes
+- **Contexte :** Une regle de travail importante etait deja posee oralement: toujours regarder trois references solides avant d'implementer une fonctionnalite importante. Cette exigence devait devenir une regle repository explicite pour ne pas dependre de la memoire des echanges.
+- **Modifications effectuees :**
+    - Ajout d'une section `Benchmark Rule` dans `CONTRIBUTING.md`.
+    - Formalisation de l'obligation de consulter au moins trois references officielles ou de niveau production avant toute evolution structurante du framework.
+- **Decisions Techniques :** Cette regle renforce la qualite architecturale de Rasono. Elle limite les decisions impulsives, force la comparaison des compromis, et aligne le travail sur une posture plus serieuse de framework maintenu sur la duree.
+- **Impacts & Dependances :** Fichier touche : `CONTRIBUTING.md`, `ENGINEERING_LOG.md`. Cette tranche n'affecte pas le runtime, mais elle eleve le niveau de discipline attendu pour les futurs changements.
+- **Prochaines etapes :** Appliquer cette regle systematiquement sur les futures tranches structurelles et la citer explicitement dans les reviews de design quand la surface change fortement.
+
 ### [2026-07-10T18:00:00Z] | Professional repository versioning, branch strategy, and release baseline
 - **Contexte :** Le depot Git existait, mais il ne portait pas encore une vraie strategie de versioning ou de branches digne d'un framework. Il n'y avait qu'une branche `main`, aucun tag, aucune politique de release visible, et les contributeurs n'avaient pas de reference claire pour savoir comment faire evoluer le projet proprement.
 - **Modifications effectuees :**
